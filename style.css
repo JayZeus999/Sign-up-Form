@@ -1,0 +1,16 @@
+/* whyisthisnamedodinproject */
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./fonts/Norse-Bold.otf") format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "Norse-Bold", sans-serif;
+}
+
+p {
+    font-family: 'Norse Bold', sans-serif;
+    letter-spacing: 0.1px;
+}
