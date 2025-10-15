@@ -1,5 +1,5 @@
 /* whyisthisnamedodinproject */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,34 +12,90 @@
     font-style: normal;
 }
 
-body, html{
+body,
+html {
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: "Norse-Bold", sans-serif;
-    font-size: 16px;
-    line-height: 1.3;
-
-}
-
-.container{
+.container {
     display: flex;
     height: 100vh;
 }
 
-.image-left{
+.image-section {
     flex: 0 0 40%;
-}
-
-.form-right{
-    flex: 1;
+    background: url("./background.jpg") center center / cover no-repeat;
+    position: relative;
+    color: white;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
-    padding: 2rem;
 }
 
-p {
-    font-family: 'Norse Bold', sans-serif;
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.odin-logo {
+    width: 60px;
+    height: auto;
+}
+
+.overlay h1 {
+    font-family: "Norse-Bold", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.form-section {
+    flex: 1;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 4rem;
+}
+
+.intro-text {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #222;
+}
+
+.signup-form {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5%;
+}
+
+a {
+    color: #596D48;
 }
