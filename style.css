@@ -1,4 +1,10 @@
 /* whyisthisnamedodinproject */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: "Norse-Bold";
     src: url("./fonts/Norse-Bold.otf") format('opentype');
@@ -6,17 +12,34 @@
     font-style: normal;
 }
 
+body, html{
+    height: 100%;
+}
+
 body {
     font-family: "Norse-Bold", sans-serif;
     font-size: 16px;
     line-height: 1.3;
 
+}
+
+.container{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    height: 100vh;
+}
+
+.image-left{
+    flex: 0 0 40%;
+}
+
+.form-right{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 2rem;
 }
 
 p {
     font-family: 'Norse Bold', sans-serif;
-    letter-spacing: 0.1px;
 }
